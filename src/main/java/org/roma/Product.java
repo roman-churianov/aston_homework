@@ -69,5 +69,10 @@ public class Product {
                 12,
                 true
         );
+
+        for (Product p : productArray) {
+            p.print();
+            System.out.println();
+        }
     }
 }
