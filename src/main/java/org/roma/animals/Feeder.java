@@ -18,7 +18,7 @@ public class Feeder {
         this.foodAmount += additionalFoodAmount;
     }
 
-    public void feed(Cat cat, int amountToFeed) {
+    public void feedCat(Cat cat, int amountToFeed) {
         if (amountToFeed <= foodAmount) {
             foodAmount = foodAmount - amountToFeed;
             cat.setFullnes(true);
