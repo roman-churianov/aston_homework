@@ -14,6 +14,7 @@ public class Feeder {
         this.foodAmount = foodAmount;
     }
 
+    // метод для добавления еды в миску
     public void increaseFoodAmount(int additionalFoodAmount) {
         this.foodAmount += additionalFoodAmount;
     }
