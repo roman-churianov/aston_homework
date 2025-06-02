@@ -1,7 +1,6 @@
 package org.roma;
 
 public class MyArraySizeException extends Exception {
-    private int actualSize;
 
     public MyArraySizeException() {}
 
