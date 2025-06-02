@@ -55,6 +55,22 @@ public class Main {
         }
     }
 
+    public static void testCorrectArray() {
+        String[][] array = new String[4][4];
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 4; j++) {
+                array[i][j] = String.valueOf(i + j);
+            }
+        }
+
+        try {
+            long result = FourByFourArray.checkFourByFourArray(array);
+            System.out.println("Correct Array Sum: " + result);
+        } catch (MyArraySizeException | MyArrayDataException ex) {
+            System.out.println(ex.getMessage());
+        }
+    }
+
     public static void main(String[] args) {
 
         testDataFourByFourArray();
@@ -64,6 +80,9 @@ public class Main {
         System.out.println();
 
         generateAndCatchArrayIndexOutOfBoundsException();
+        System.out.println();
+
+        testCorrectArray();
         System.out.println();
     }
 }
