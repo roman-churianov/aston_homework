@@ -1,9 +1,10 @@
 package org.roma.phonebook;
 
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.Arrays;
 import java.util.List;
+import java.util.ArrayList;
 import java.util.Map;
+import java.util.HashMap;
 
 public class PhoneBook {
     private Map<String, List<String>> namesPhones;
@@ -16,8 +17,7 @@ public class PhoneBook {
         if (namesPhones.containsKey(name)) {
             namesPhones.get(name).add(phoneNumber);
         } else {
-            namesPhones.put(name, new ArrayList<>());
-            namesPhones.get(name).add(phoneNumber);
+            namesPhones.put(name, new ArrayList<>(Arrays.asList(phoneNumber)));
         }
     }
 

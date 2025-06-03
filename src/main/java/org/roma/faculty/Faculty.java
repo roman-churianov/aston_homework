@@ -4,6 +4,10 @@ import java.util.Set;
 import java.util.Map;
 import java.util.HashMap;
 
+/*
+* Class for holding Student collection
+* */
+
 public class Faculty {
     private Map<Integer, Student> students;
     private Integer idCounter;
