@@ -53,7 +53,7 @@ public class TestPostmanEcho {
 
     @Test
     public void testPut() {
-        String bodyStr = "This is supposed to be returned id data.";
+        String bodyStr = "This is supposed to be returned in data.";
         given()
                 .baseUri("https://postman-echo.com")
                 .contentType("text/plain")
