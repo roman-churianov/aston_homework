@@ -1,9 +1,8 @@
-package org.roma;
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.roma.TopUpBlock;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
