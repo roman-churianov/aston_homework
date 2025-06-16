@@ -62,6 +62,10 @@ public class TopUpBlock {
         new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOfElementLocated(By.className(className)));
     }
 
+    public void waitForElementVisibleByCssSelector(String cssSelector) {
+        new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(cssSelector)));
+    }
+
     public WebDriver getDriver() {
         return driver;
     }
